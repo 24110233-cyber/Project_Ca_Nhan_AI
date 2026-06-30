@@ -46,7 +46,7 @@ Chay moi moi truong bang cach vao dung thu muc roi goi `main.py`.
 ### 1. Vacuum World va 8-Puzzle
 
 ```powershell
-cd C:\Users\ducvu\Downloads\BTVN\BTVN\vaccum-8puzzle
+cd C:\Users\BTVN\vaccum-8puzzle
 python main.py
 ```
 
@@ -96,7 +96,7 @@ Luu y: cac thuat toan cuc bo nhu Hill Climbing va Simulated Annealing co the dun
 ### 2. To mau ban do
 
 ```powershell
-cd C:\Users\ducvu\Downloads\BTVN\BTVN\to-mau
+cd C:\Users\BTVN\to-mau
 python main.py
 ```
 
@@ -120,7 +120,7 @@ Giao dien hien thi:
 ### 3. Caro
 
 ```powershell
-cd C:\Users\ducvu\Downloads\BTVN\BTVN\caro
+cd C:\Users\BTVN\caro
 python main.py
 ```
 
@@ -194,19 +194,3 @@ Da chay smoke test bang Python cho toan bo project:
 - `caro`: Minimax, Alpha-Beta va Expectimax tinh duoc nuoc di tren the co mau.
 - `to-mau`: Backtracking, Forward Checking, AC-3 va Min-Conflicts deu tim duoc loi giai hop le, 22 vung duoc to mau va khong co xung dot.
 
-Lenh kiem tra cu phap:
-
-```powershell
-cd C:\Users\ducvu\Downloads\BTVN\BTVN
-python -B -c "import ast, pathlib; [ast.parse(p.read_text(encoding='utf-8'), filename=str(p)) for p in pathlib.Path('.').rglob('*.py')]; print('syntax ok')"
-```
-
-## Goi y trinh bay bao cao
-
-Khi thuyet trinh, co the chay theo thu tu:
-
-1. `vaccum-8puzzle`: minh hoa search co frontier/reached va duong di loi giai.
-2. `to-mau`: minh hoa CSP, rang buoc, domain va qua trinh cat tia.
-3. `caro`: minh hoa tim kiem doi khang, so sanh Minimax voi Alpha-Beta qua so node mo rong.
-
-Trong phan Caro, Alpha-Beta thuong mo rong it node hon Minimax vi cat tia duoc cac nhanh khong anh huong den quyet dinh cuoi.
